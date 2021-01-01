@@ -2,9 +2,10 @@ def find_max_value(array)
   index = 0 
   highest_so_far = nil 
   while array[index] do
-    if highest_so_far < array[index] || highest_so_far == nil
+    if highest_so_far == nil || highest_so_far < array[index]
       highest_so_far = array[index]
-  end 
+    end 
   index += 1 
+  end
   return highest_so_far     
 end
