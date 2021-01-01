@@ -4,7 +4,7 @@ def find_max_value(array)
   while array[index] do
     if highest_so_far < array[index] || highest_so_far == nil
       highest_so_far = array[index]
-    end 
+  end 
   index += 1 
   return highest_so_far     
 end
